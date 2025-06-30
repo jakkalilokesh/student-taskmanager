@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::880780901167:user/aws-amplify-dev"
+            },
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:DeleteObject",
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::amplify-studenttaskmanager-dev-b5f32-deployment",
+                "arn:aws:s3:::amplify-studenttaskmanager-dev-b5f32-deployment/*"
+            ]
+        }
+    ]
+}
